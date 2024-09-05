@@ -40,7 +40,6 @@ sequenceDiagram
 
     browser->>server: POST 
     activate server
-    server-->>browser: Receive
     deactivate server
 
     browser->>server: GET Notes
