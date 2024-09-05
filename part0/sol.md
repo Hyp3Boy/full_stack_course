@@ -30,3 +30,21 @@ sequenceDiagram
 
     Note right of browser: The browser executes the callback function that renders the notes
 ```
+
+### For post:
+
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: POST 
+    activate server
+    server-->>browser: Receive
+    deactivate server
+
+    browser->>server: GET Notes
+    activate server
+    server-->>browser: The notes
+    deactivate server
+```
