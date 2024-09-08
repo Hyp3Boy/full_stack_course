@@ -40,7 +40,7 @@ sequenceDiagram
 
     browser->>server: POST 
     activate server
-    server->>browser: CORRECT STATUS RESPONSE
+    server-->>browser: CORRECT STATUS RESPONSE
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that reload the JSON
