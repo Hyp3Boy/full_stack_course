@@ -40,12 +40,11 @@ sequenceDiagram
 
     browser->>server: POST 
     activate server
+    server->>browser: CORRECT STATUS RESPONSE
     deactivate server
 
-    browser->>server: GET Notes
-    activate server
-    server-->>browser: The notes
-    deactivate server
+    Note right of browser: The browser starts executing the JavaScript code that reload the JSON
+
 ```
 
 ## 5. Single page app diagram
